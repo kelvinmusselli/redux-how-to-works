@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { removeUser, getUsers } from '../../store/modules/users/actions'
 
 function Home() {
+
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -36,7 +37,7 @@ function Home() {
           ))
         }
       </ul>
-      <button onClick={() => history.push('/new')}>Ir para cadastros</button>
+      <button type="button" onClick={() => history.push('/new')}>Ir para cadastros</button>
     </>
   );
 };

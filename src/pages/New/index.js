@@ -13,8 +13,8 @@ function New() {
   return (
     <>
       <div>
-        <input type="text" value={user.name} onChange={(e) => setAddUser({ name: e.target.value })}/>
-        <button onClick={() => handleAddUser()}>Cadastrar</button>
+        <input type="text" name="add-user" value={user.name} onChange={(e) => setAddUser({ name: e.target.value })}/>
+        <button type="button" onClick={() => handleAddUser()}>Cadastrar</button>
       </div>
     </>
   );

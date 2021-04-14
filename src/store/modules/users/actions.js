@@ -3,14 +3,12 @@ import { api } from "../../../services/api";
 
 const { GET_ALL, ADD_USER, DELETE_USER } = TYPES;
 
-
 export function gettedUsers (users) {
   return {
     type: GET_ALL,
     payload:users,
   };
 }
-
 
 export function getUsers () {
   return async (dispatch) => {
