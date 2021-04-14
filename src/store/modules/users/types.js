@@ -1,0 +1,5 @@
+export const TYPES = {
+  GET_ALL: 'GETTED_USERS',
+  ADD_USER: 'ADD_USER',
+  DELETE_USER: 'REMOVE_USER'
+};
